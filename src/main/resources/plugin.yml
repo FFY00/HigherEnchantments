@@ -1,5 +1,5 @@
-name: AnubisLobbyTag
-main: io.github.ffy00.AnubisLobbyTag
+name: HigherEnchantments
+main: io.github.ffy00.HigherEnchantments
 version: 1.0
 author: FFY00
-depends: [PermissionsEX]
+depend: [ProtocolLib]
