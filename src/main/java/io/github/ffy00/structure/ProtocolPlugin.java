@@ -7,7 +7,4 @@ public interface ProtocolPlugin {
 
     public ProtocolManager getProtocolManager();
 
-    public FileConfiguration getPluginConfig();
-    public FileConfiguration getPluginConfig(String name);
-
 }
