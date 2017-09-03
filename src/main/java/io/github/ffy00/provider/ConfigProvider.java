@@ -22,9 +22,11 @@ import java.io.IOException;
 public class ConfigProvider {
 
     protected JavaPlugin lplugin;
+    protected String name;
 
     public ConfigProvider(JavaPlugin plugin){
         lplugin = plugin;
+        name = plugin.getDescription().getName();
     }
 
     public FileConfiguration get(){
@@ -32,10 +34,10 @@ public class ConfigProvider {
     }
 
     public FileConfiguration get(String name){
-        Bukkit.getConsoleSender().sendMessage("§cHigherEnchantments §e>> §bLoading config §d§o" + name);
+        Bukkit.getConsoleSender().sendMessage("§c" + name + " §e>> §bLoading config §d§o" + name);
         File f = new File(lplugin.getDataFolder(),  name);
         if(!f.exists()){
-            Bukkit.getConsoleSender().sendMessage("§cHigherEnchantments §e>> §bCreating config §d§o" + name);
+            Bukkit.getConsoleSender().sendMessage("§c" + name + " §e>> §bCreating config §d§o" + name);
             lplugin.saveResource(name, false);
         }
         return YamlConfiguration.loadConfiguration(f);
@@ -46,15 +48,15 @@ public class ConfigProvider {
     public boolean save(FileConfiguration c, String name){
         File f = new File(lplugin.getDataFolder().getAbsoluteFile() + "plugins" + File.separator + lplugin.getDescription().getName() + File.separator + name);
         if(!f.exists()){
-            Bukkit.getConsoleSender().sendMessage("§cHigherEnchantments §e>> §bCreating config §d§o" + name);
+            Bukkit.getConsoleSender().sendMessage("§c" + name + " §e>> §bCreating config §d§o" + name);
             lplugin.saveResource(name, false);
         }
         try{
-            Bukkit.getConsoleSender().sendMessage("§cHigherEnchantments §e>> §bSaving config §d§o" + name);
+            Bukkit.getConsoleSender().sendMessage("§c" + name + " §e>> §bSaving config §d§o" + name);
             c.save(f);
             return true;
         } catch (IOException ex){
-            Bukkit.getConsoleSender().sendMessage("§cHigherEnchantments §e>> §4§l[!] §bCouldn't save config §d§o" + name);
+            Bukkit.getConsoleSender().sendMessage("§c" + name + " §e>> §4§l[!] §bCouldn't save config §d§o" + name);
             return false;
         }
     }
