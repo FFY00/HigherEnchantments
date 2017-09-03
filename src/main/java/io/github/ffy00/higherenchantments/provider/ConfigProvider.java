@@ -4,7 +4,7 @@
  * Simple Non Code License (SNCL) v1.10.0
  */
 
-package io.github.ffy00.provider;
+package io.github.ffy00.higherenchantments.provider;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;

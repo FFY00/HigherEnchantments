@@ -4,14 +4,14 @@
  * Simple Non Code License (SNCL) v1.10.0
  */
 
-package io.github.ffy00;
+package io.github.ffy00.higherenchantments;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
-import io.github.ffy00.adapter.EnchantmentPacketAdapter;
-import io.github.ffy00.provider.ConfigProvider;
-import io.github.ffy00.structure.ConfigPlugin;
-import io.github.ffy00.structure.ProtocolPlugin;
+import io.github.ffy00.higherenchantments.adapter.EnchantmentPacketAdapter;
+import io.github.ffy00.higherenchantments.provider.ConfigProvider;
+import io.github.ffy00.higherenchantments.structure.ConfigPlugin;
+import io.github.ffy00.higherenchantments.structure.ProtocolPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

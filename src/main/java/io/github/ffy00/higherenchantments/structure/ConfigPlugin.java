@@ -1,4 +1,4 @@
-package io.github.ffy00.structure;
+package io.github.ffy00.higherenchantments.structure;
 
 import org.bukkit.configuration.file.FileConfiguration;
 

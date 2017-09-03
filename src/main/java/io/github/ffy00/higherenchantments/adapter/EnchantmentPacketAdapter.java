@@ -1,10 +1,10 @@
-package io.github.ffy00.adapter;
+package io.github.ffy00.higherenchantments.adapter;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolManager;
 import com.comphenix.protocol.events.*;
-import io.github.ffy00.structure.ConfigPlugin;
-import io.github.ffy00.structure.ProtocolPlugin;
+import io.github.ffy00.higherenchantments.structure.ConfigPlugin;
+import io.github.ffy00.higherenchantments.structure.ProtocolPlugin;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
